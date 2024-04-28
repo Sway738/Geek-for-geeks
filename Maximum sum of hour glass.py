@@ -9,7 +9,7 @@ class Solution:
                 curAns  = mat[i][j] + mat[i][j+1] + mat[i][j+2]
                 curAns += + mat[i+1][j+1]
                 curAns += mat[i+2][j] + mat[i+2][j+1] + mat[i+2][j+2]
-                
+            
                 ans = max(ans, curAns)
                 
         return ans
